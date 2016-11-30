@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Dream_MMA;
+    src: url(Font/Dream_MMA.ttf);
+}
+
+html {
+	background-image: url("images/wood_plank.jpg");
+}
+
+p {
+	font-size: 12px;
+	font-family: Dream_MMA;
+}
+
+nav {
+	width: 100%;
+	margin-top: 50px;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	height: 50px;
+}
+
+nav li {
+	display: inline-block;
+	top: 0px;
+	vertical-align: top;
+	margin: 0px 3%;
+	
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-family: Dream_MMA;
+	font-size: 25px;
+	position: relative;
+	display: block;
+	top: 0%;
+	padding: 0px 10px;
+	text-shadow: 0px 0px 20px #0072ff;
+}
+
+nav a:hover {
+	color: orange;
+}
+
+.dropdownOptions a {
+	font-size: 18px;
+	padding: 2px 5px;
+}
+
+.dropdownOptions li {
+	margin-left: 20px;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.dropdownContainer {
+	position: relative;
+}
+
+.dropdownContainer .dropdownButton {
+	position: relative;
+	z-index: 10;
+}
+
+.dropdownContainer .dropdownOptions {
+	opacity: 0;
+	z-index: 9;
+	margin: 0;
+	top: 95%;
+	visibility: hidden;
+	position: absolute;
+	text-align: left;
+	left: 0;
+	width: 100%;
+	padding: 8px 0 5px;
+	transition: opacity .3s ease 0s;
+}
+
+.dropdownContainer:hover .dropdownOptions {
+	opacity: 1;
+	visibility: visible;
+}
+
+.dropdownContainer .dropdownOptions, 
+.dropdownContainer .dropdownOptions li, 
+.dropdownContainer .dropdownOptions li a {
+	display: block;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+nav ul {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+article {
+	width: 85%;
+	background-color: rgba(255, 255, 255, 0.3);
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 90px;
+	text-align: center;
+}
+
+.imgContainer {
+	width: 200px;
+	position: relative;
+	margin: 10px 5px;
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.fadeText {
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	height: 20%;
+	z-index: 9;	
+}
+
+.imgfade {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s ease-in-out;
+	z-index: 10;
+}
+
+.imgfade:hover {
+	visibility: visible;
+	opacity: 0.3;
+}
+
+.imgContainer .fadeText {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.imgContainer:hover .fadeText {
+	visibility: visible;
+	opacity: 1;
+	color: black;
+}
+ 
+.fadeText:hover  {
+	visibility: visible;
+	opacity: 0.3;
+	background-color: rgba(255, 255, 255, 0.7);
+	color: white;
+}
+
+.slideText_bottom, .slideText_top, .slideText_left, .slideText_right {
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	width: 200px;
+	opacity: 0;
+	transition: all .6s ease;
+}
+
+.slideText_left {
+	top: 40%;
+	left: -200px;
+}
+
+.slideText_right {
+	top: 40%;
+	right: -200px;
+}
+
+.slideText_bottom {
+	bottom: -15%;
+}
+
+.slideText_top {
+	top: -15%;
+}
+
+
+.imgContainer:hover .slideText_bottom {
+	opacity: 1;
+	bottom: 5px;
+}
+
+.imgContainer:hover .slideText_top {
+	opacity: 1;
+	top: 0px;
+}
+
+.imgContainer:hover .slideText_left{
+	opacity: 1;
+	left: 0px;
+}
+
+.imgContainer:hover .slideText_right{
+	opacity: 1;
+	right: 0px;
+}
+
+.imgSlider {
+	z-index: 10;
+}
+
+
+.teeSlider li {
+	display: inline-block;
+}
+
+.info {
+	font-family: 'Century Gothic';
+	padding: 45px 0px;
+	width: 70%;
+	font-size: 25px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	line-height: 35px;
+	text-shadow: 0px 0px 1px #0072ff;
+}
