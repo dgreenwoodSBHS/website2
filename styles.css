@@ -32,7 +32,7 @@ nav a {
 	text-decoration: none;
 	color: white;
 	font-family: Dream_MMA;
-	font-size: 25px;
+	font-size: 1.8vw;
 	position: relative;
 	display: block;
 	top: 0%;
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 .dropdownOptions a {
-	font-size: 18px;
+	font-size: 1.5vw;
 	padding: 2px 5px;
 }
 
@@ -108,6 +108,13 @@ article {
 	margin-right: auto;
 	top: 90px;
 	text-align: center;
+}
+
+article .info {
+	
+	font-size: 2vmax;
+	line-height: 120%;
+	 
 }
 
 .imgContainer {
